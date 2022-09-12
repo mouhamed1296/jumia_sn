@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumia</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="jumia.css">
+    <!-- Fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="img-container" class="plr">
+                <img id="promo" src="img/promo.jpg" alt="promo image">
+            </div>
+            <div id="categories" class="plr">
+                <a id="vente"><i class="fa-solid fa-star" id="starIcon"></i> Vendez sur Jumia</a>
+                <ul>
+                    <li class="categ-link"><a href="jumia.html" class="current"><i class="fa-solid fa-burger"></i>FOOD</a></li>
+                    <li class="categ-link"><a href="jumia.html" class="deals"><i class="fa-solid fa-handshake"></i>DEALS</a></li>
+                    <li class="categ-link"><a href="jumia.html"><i class="fa-solid fa-box"></i>LOGISTICS</a></li>
+                </ul>
+            </div>
+            <nav id="navigation" class="plr">
+                <div>
+                    <img id="logo" src="img/logo.png" alt="logo jumia">
+                </div>
+                <div id="form_menu">
+                    <form action="">
+                        <div id="searchInput">
+                            <i class="fa-solid fa-search" id="search-icon"></i>
+                            <input type="search" placeholder="Chercher un produit, une marque ou une categorie">
+                        </div>
+                        
+                        <button type="submit" id="searchBtn">RECHERCHER</button>
+                    </form>
+                    <ul>
+                        <li class="navigation-link">
+                            <a>
+                                <i class="fa-regular fa-user"></i><span class="remove">Se connecter</span>
+                                <i class="fa-solid fa-angle-down dropdown-caret"></i>
+                            </a>
+                        </li>
+                        <li class="navigation-link">
+                            <a>
+                                <i class="fa-regular fa-circle-question"></i><span class="remove">Aide</span>
+                                <i class="fa-solid fa-angle-down dropdown-caret"></i>
+                            </a>
+                        </li>
+                        <li class="navigation-link">
+                            <a><i class="fa-solid fa-cart-shopping"></i><span class="remove">Panier</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="plr">
+            <div id="produits">
+                <nav>
+                    <ul id="categorie_produits"></ul>
+                </nav>
+                <div id="slider" role="slider">
+                    <button class="slider-button prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="slider-button next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                    <ul id="slides">
+                       <!--  <li class="slide" data-active>
+                            <img src="img/slide1.jpg" alt="first slide">
+                        </li>
+                        <li class="slide">
+                            <img src="img/slide2.jpeg" alt="second slide">
+                        </li>
+                        <li class="slide">
+                            <img src="img/slide3.jpg" alt="third slide">
+                        </li>
+                        <li class="slide">
+                            <img src="img/slide4.jpg" alt="fourth slide">
+                        </li> -->
+                    </ul>
+                    <ul id="dots">
+                        <!-- <li class="dot" data-active></li>
+                        <li class="dot"></li>
+                        <li class="dot"></li>
+                        <li class="dot"></li> -->
+                    </ul>
+                </div>
+                <div id="assistance_promo">
+                    <div id="ass-container">
+                        <a href="" class="ass">
+                            <i class="fa-solid fa-question fa-2x ass_icon"></i>
+                            <div class="ass_bloc">
+                                <span class="title">Centre d'assistance</span>
+                                <span class="content">Guide du service client</span>
+                            </div>
+                        </a>
+                        <a href="" class="ass">
+                            <i class="fa-solid fa-phone fa-2x ass_icon"></i>
+                            <div class="ass_bloc">
+                                <span class="title">Commandez au</span>
+                                <span class="content">30 102 21 21</span>
+                            </div>
+                        </a>
+                        <a href="" class="ass">
+                            <i class="fa-solid fa-store fa-2x ass_icon"></i>
+                            <div class="ass_bloc">
+                                <span class="title">Vendez sur Jumia</span>
+                                <span class="content">Ouvrez votre shop ici</span>
+                            </div>
+                        </a>
+                    </div>
+                    <img id="promo-gif" src="img/gif_promo.gif" alt="assistance promo">
+                </div>
+            </div>
+            <div id="h_slider">
+                <button id="prevButton">
+                    <i class="fa-solid fa-angle-left fa-2x prevIcon activeIcon"></i>
+                </button>
+                <div id="h_slider-container">
+                    <a class="h_slider-img">
+                        <img src="img/ete.jpeg" alt="">
+                    </a>
+                    <a class="h_slider-img">
+                        <img src="img/flash.jpg" alt="">
+                    </a>
+                    <a class="h_slider-img">
+                        <img src="img/deals.jpg" alt="">
+                    </a>
+                    <a class="h_slider-img">
+                        <img src="img/food.jpg" alt="">
+                    </a>
+                    <a class="h_slider-img">
+                        <img src="img/cooling.jpeg" alt="">
+                    </a>
+                    <a class="h_slider-img">
+                        <img src="img/h_ete.jpg" alt="">
+                    </a>
+                    <a class="h_slider-img">
+                        <img src="img/s_ete.jpg" alt="">
+                    </a>
+                    <a class="h_slider-img">
+                        <img src="img/tel.jpg" alt="">
+                    </a>
+                    <a class="h_slider-img">
+                        <img src="img/elect.jpg" alt="">
+                    </a>
+                    <a class="h_slider-img">
+                        <img src="img/menager.jpg" alt="">
+                    </a>
+                    <a class="h_slider-img"> 
+                        <img src="img/beauty.jpg" alt="">
+                    </a>
+                    <a class="h_slider-img"> 
+                        <img src="img/course.jpg" alt="">
+                    </a>
+                </div>
+                <button id="nextButton">
+                    <i class="fa-solid fa-angle-right fa-2x nextIcon"></i>
+                </button>
+            </div>
+        </main>
+    </div>
+    <script src="jumia.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
